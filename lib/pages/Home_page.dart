@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/TopContainer.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -14,18 +16,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(),
       body: Column(
         children: [
-          Text(
-            'Worry less. \nLive healthier.',
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
-          Text(
-            'Welcome to Daily Dose.',
-            style: Theme.of(context).textTheme.titleSmall,
-          ),
-          Text(
-            '0',
-            style: Theme.of(context).textTheme.headlineMedium,
-          ),
+          Topcontainer(),
         ],
       ),
     );

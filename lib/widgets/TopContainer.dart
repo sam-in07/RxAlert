@@ -9,7 +9,18 @@ class Topcontainer extends StatelessWidget{
     // TODO: implement build
    return Column(
      children: [
-
+       Text(
+         'Worry less. \nLive healthier.',
+         style: Theme.of(context).textTheme.headlineMedium,
+       ),
+       Text(
+         'Welcome to Daily Dose.',
+         style: Theme.of(context).textTheme.titleSmall,
+       ),
+       Text(
+         '0',
+         style: Theme.of(context).textTheme.headlineMedium,
+       ),
      ],
    );
   }
