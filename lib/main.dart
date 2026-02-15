@@ -26,10 +26,17 @@ class MyApp extends StatelessWidget {
               backgroundColor: kScaffoldColor,
               elevation: 0,
             ),
+
+
             textTheme: TextTheme(
+              displaySmall : TextStyle(
+                fontSize : 28.sp,
+                color: kSecondaryColor,
+                fontWeight: FontWeight.w400,
+              ),
               headlineMedium: TextStyle(
                 fontSize: 24.sp,
-                fontWeight: FontWeight.w900,
+                fontWeight: FontWeight.w800,
                 color: kTextColor,
               ),
               titleSmall: GoogleFonts.poppins(

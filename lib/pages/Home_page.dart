@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import '../widgets/BottomContainer‎.dart';
 import '../widgets/TopContainer.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +18,14 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(),
       body: Padding(
         padding: EdgeInsets.all(2.h),
-        child: Column(children: [Topcontainer()]),
+        child: Column(
+          children: [
+            Topcontainer(),
+            SizedBox(height: 2.h),
+            //the widget take space as per need
+            Flexible(child: BottomContainer()),
+          ],
+        ),
       ),
     );
   }
