@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 import '../widgets/TopContainer.dart';
 
@@ -14,10 +15,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(
-        children: [
-          Topcontainer(),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(2.h),
+        child: Column(children: [Topcontainer()]),
       ),
     );
   }
