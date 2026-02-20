@@ -28,17 +28,21 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      floatingActionButton: Card(
+      floatingActionButton: SizedBox(
+        width: 19.w,
+        height: 9.h,
+        child: Card(
 
-        color: kPrimaryColor,
-        shape: BeveledRectangleBorder(
-          borderRadius: BorderRadius.circular(3.h),
+          color: kPrimaryColor,
+          shape: BeveledRectangleBorder(
+            borderRadius: BorderRadius.circular(3.h),
 
-        ),
-        child: Icon(
-          Icons.add_outlined,
-          color: kScaffoldColor,
-          size: 50.sp,
+          ),
+          child: Icon(
+            Icons.add_outlined,
+            color: kScaffoldColor,
+            size: 50.sp,
+          ),
         ),
       ),
     );
