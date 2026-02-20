@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rx_alert/widgets/colors.dart';
 import 'package:sizer/sizer.dart';
 
 import '../widgets/BottomContainer‎.dart';
@@ -25,6 +26,19 @@ class _HomePageState extends State<HomePage> {
             //the widget take space as per need
             Flexible(child: BottomContainer()),
           ],
+        ),
+      ),
+      floatingActionButton: Card(
+
+        color: kPrimaryColor,
+        shape: BeveledRectangleBorder(
+          borderRadius: BorderRadius.circular(3.h),
+
+        ),
+        child: Icon(
+          Icons.add_outlined,
+          color: kScaffoldColor,
+          size: 50.sp,
         ),
       ),
     );

@@ -27,10 +27,9 @@ class MyApp extends StatelessWidget {
               elevation: 0,
             ),
 
-
             textTheme: TextTheme(
-              displaySmall : TextStyle(
-                fontSize : 28.sp,
+              displaySmall: TextStyle(
+                fontSize: 28.sp,
                 color: kSecondaryColor,
                 fontWeight: FontWeight.w400,
               ),
